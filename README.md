@@ -95,12 +95,40 @@ Add AWS Credentials to GitHub Secrets:
 
 -Go to your repository on GitHub.
 
--Click on Settings > Secrets and variables > Actions.
+-Click on `Settings` > `Secrets` and `variables` > `Actions`.
 
--Click New repository secret.
+-Click `New repository secret`.
 
--Create a secret named AWS_ACCESS_KEY_ID and paste your IAM user's Access Key ID.
+-Create a secret named `AWS_ACCESS_KEY_ID` and paste your IAM user's Access Key ID.
 
--Create another secret named AWS_SECRET_ACCESS_KEY and paste your Secret Access Key.
+-Create another secret named `AWS_SECRET_ACCESS_KEY` and paste your Secret Access Key.
 
--Create a final secret named AWS_S3_BUCKET and paste the name of the S3 bucket that Terraform created.
+-Create a final secret named `AWS_S3_BUCKET` and paste the name of the S3 bucket that Terraform created.
+-create a secret name for region `AWS_REGION` and past the name of the S3 bucket region e.g `us-east-2`
+
+**Push and Deploy**
+
+-Make a small change to your index.html file (e.g., change some text).
+
+-Commit and push your changes to GitHub:
+
+```
+git add .
+git commit -m "My first automated deployment"
+git push
+```
+-Go to the Actions tab in your GitHub repository. You will see your workflow running. Once it finishes with a green checkmark, your updated site is live! 
+
+**Getting the static URL**
+You can find the public URL in your S3 bucket's settings under Static website hosting.
+
+**Step 1: Enable Static Website Hosting**
+-Go to AWS S3 Console
+-Find and click on your bucket (my-country-list-bucket-unique)
+-Click on the `Properties` tab
+-Scroll down to `Static website hosting`
+-Click `Edit`
+-Select `Enable`
+-Index document: Enter index.html
+-Error document (optional): Enter error.html or index.html
+-Click `Save changes`
