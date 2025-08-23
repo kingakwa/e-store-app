@@ -100,7 +100,7 @@ run:
 
 ```aws configure  ## It will prompt you for your Access Key ID, Secret Access Key, default region (e.g., us-east-1), and default output format ```
 
-2.Initialize Terraform:
+**2.Initialize Terraform:**
 
 Navigate to the terraform directory in your project's terminal:
 
@@ -109,19 +109,23 @@ cd terraform
 terraform init
 ```
 
-3. Review the Plan: See what resources Terraform is about to create:
+3. **Review the Plan:** See what resources Terraform is about to create:
    ```
    
    terraform plan #This will show you that it plans to create an S3 bucket configured for static website hosting
    ```
    
-4.Apply the Changes: To create the S3 bucket in your AWS account, run:
+**4.Apply the Changes:** To create the S3 bucket in your AWS account, run:
 
 ```
 terraform apply  #Terraform will ask for confirmation. Type yes and press Enter. Your S3 bucket is now live!
 ```
 
 <img width="622" height="166" alt="terraform apply" src="https://github.com/user-attachments/assets/167f41b4-fd48-40bf-893f-dbecb5d4bb01" />
+
+
+<img width="506" height="121" alt="BUCKETcreated" src="https://github.com/user-attachments/assets/736da083-0619-478f-a393-fcd174637cb6" />
+
 
 
 ## Phase 3: Automating Deployment with GitHub Actions
