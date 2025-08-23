@@ -69,3 +69,38 @@ npm -v    #If the commands return version numbers (e.g., v18.16.0 for Node.js an
 -Open your terminal and configure the AWS CLI to use the credentials you just created:
 ```aws configure  ## It will prompt you for your Access Key ID, Secret Access Key, default region (e.g., us-east-1), and default output format ```
 
+2.Initialize Terraform:
+Navigate to the terraform directory in your project's terminal:
+
+```
+cd terraform
+terraform init
+```
+3. Review the Plan: See what resources Terraform is about to create:
+   ```
+   terraform plan #This will show you that it plans to create an S3 bucket configured for static website hosting
+   ```
+4.Apply the Changes: To create the S3 bucket in your AWS account, run:
+
+```
+terraform apply  #Terraform will ask for confirmation. Type yes and press Enter. Your S3 bucket is now live!
+```
+
+## Phase 3: Automating Deployment with GitHub Actions
+
+-This is the final and most powerful step. We will set up a workflow so that every time you push a change to your GitHub repository, it automatically builds your website and deploys it to the S3 bucket you just created.
+
+**Add AWS Credentials to GitHub Secrets:**
+Add AWS Credentials to GitHub Secrets:
+
+-Go to your repository on GitHub.
+
+-Click on Settings > Secrets and variables > Actions.
+
+-Click New repository secret.
+
+-Create a secret named AWS_ACCESS_KEY_ID and paste your IAM user's Access Key ID.
+
+-Create another secret named AWS_SECRET_ACCESS_KEY and paste your Secret Access Key.
+
+-Create a final secret named AWS_S3_BUCKET and paste the name of the S3 bucket that Terraform created.
