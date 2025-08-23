@@ -1,5 +1,16 @@
 # My ecommerce store
+This is an excellent project that covers the full lifecycle of a modern web application, from local development to automated cloud deployment.
 
+Let's break this down into three main phases:
+
+Phase 1: Running the Website Locally
+
+Phase 2: Setting Up the Cloud Infrastructure with Terraform
+
+Phase 3: Automating Deployment with GitHub Actions
+
+# Phase 1: Running the Website Locally
+First, let's get the project running on your own computer. This allows you to make changes and see them instantly
 ## Prerequisites:
 
 -Node.js and npm: Make sure you have Node.js installed. You can get it from the official website. npm comes bundled with it.
@@ -39,6 +50,22 @@ node -v
 npm -v    #If the commands return version numbers (e.g., v18.16.0 for Node.js and 9.5.1 for npm)
 ```
 
-- **Run**
+ **Run**
 - `yarn` or `npm install` to install packages
-- 
+  
+**step 4: Start the Development Server:** This project uses Vite. To start the local server, run:
+  ```npm run dev```
+  
+  Your terminal should now show you a local address, usually http://localhost:5173. Open this URL in your web browser. You should see the e-commerce    website! Any changes you make to the code in the src folder will now appear instantly in your browser.
+  
+## Phase 2: Setting Up Cloud Infrastructure with Terraform
+-Create the AWS S3 bucket where your website will live. We'll use Terraform to do this in an automated, repeatable way.
+**Prerequisites:**
+-Terraform: Install the Terraform CLI.
+-AWS CLI: Install the AWS CLI.
+-AWS IAM User: For security, do not use your root AWS account. Create an IAM User with programmatic access and attach policies that give it permission to manage S3 (AmazonS3FullAccess is fine for this project). Save the Access Key ID and Secret Access Key.
+
+**1.Configure AWS Credentials:** 
+-Open your terminal and configure the AWS CLI to use the credentials you just created:
+```aws configure  ## It will prompt you for your Access Key ID, Secret Access Key, default region (e.g., us-east-1), and default output format ```
+
