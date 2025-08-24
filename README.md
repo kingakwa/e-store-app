@@ -9,8 +9,14 @@ Phase 2: Setting Up the Cloud Infrastructure with Terraform
 
 Phase 3: Automating Deployment with GitHub Actions
 
+## Architecture 
+
+<img width="768" height="512" alt="CI_CD Pipeline for E-commerce Deployment" src="https://github.com/user-attachments/assets/a5c23998-63e9-411a-806b-b7f4b0eb6aa9" />
+
+
 # Phase 1: Running the Website Locally
 First, let's get the project running on your own computer. This allows you to make changes and see them instantly
+
 ## Prerequisites:
 
 -Node.js and npm: Make sure you have Node.js installed. You can get it from the official website. npm comes bundled with it.
