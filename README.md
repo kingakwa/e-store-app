@@ -1,4 +1,4 @@
-# My ecommerce store
+# My E-commerce store
 This is an excellent project that covers the full lifecycle of a modern web application, from local development to automated cloud deployment.
 
 Let's break this down into three main phases:
