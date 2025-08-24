@@ -156,6 +156,7 @@ Add AWS Credentials to GitHub Secrets:
 
 -create a secret name for region `AWS_REGION` and past the name of the S3 bucket region e.g `us-east-2`
 
+
 <img width="628" height="392" alt="variable -on-github" src="https://github.com/user-attachments/assets/2c1635c3-4b98-4c29-bfa4-9621f4933f8e" />
 
 
