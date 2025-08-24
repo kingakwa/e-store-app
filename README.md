@@ -227,7 +227,9 @@ You can find the public URL in your S3 bucket's settings under Static website ho
             "Resource": "arn:aws:s3:::my-country-list-bucket-unique/*"
         }
     ]
-}```
+  }
+  ```
+
 -Click `Save changes`
 
 -Disable Block Public Access
