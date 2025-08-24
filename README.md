@@ -19,11 +19,11 @@ First, let's get the project running on your own computer. This allows you to ma
 
 ## Prerequisites:
 
--Node.js and npm: Make sure you have Node.js installed. You can get it from the official website. npm comes bundled with it.
+- Node.js and npm: Make sure you have Node.js installed. You can get it from the official website. npm comes bundled with it.
 
--Git: You'll need Git to manage the code.
+- Git: You'll need Git to manage the code.
 
--A Code Editor: I recommend Visual Studio Code.
+- A Code Editor: I recommend Visual Studio Code.
 
 ## Installation
 - Clone the Repository: Open your terminal (or command prompt), navigate to where you want to store the project, and run:
