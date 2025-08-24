@@ -81,7 +81,9 @@ This project uses Vite. To start the local server,
 run:
   ```npm run dev```
   
-  Your terminal should now show you a local address, usually http://localhost:5173. Open this URL in your web browser. You should see the e-commerce    website! Any changes you make to the code in the src folder will now appear instantly in your browser.
+  Your terminal should now show you a local address, usually `http://localhost:5173`.
+  
+  Open this URL in your web browser. You should see the e-commerce website! Any changes you make to the code in the src folder will now appear instantly in your browser.
 
 <img width="593" height="266" alt="url for the website" src="https://github.com/user-attachments/assets/d0ee6909-dd0d-42ab-b4d0-ba71a240584f" />
 
